@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", serif;
+}
+
+.container{
+    background-color: #fff;
+    width: 58%;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+h1,h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+h1{
+    margin: 13px 0;
+}
+h2{
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 15px;
+}
+p{
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+.preparation h2{
+    color: hsl(332, 51%, 32%);
+    font-family: "Outfit", serif;
+    font-weight: 600;
+}
+.preparation ul{
+    margin: 0 0 0 30px;
+}
+.preparation ul li{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+}
+ul li{
+    list-style: square;
+}
+ul li,ol li{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+span{
+    color: hsl(30, 10%, 34%);
+    margin-left: 15px;
+    font-weight: 400;
+}
+.ingredients,.instructions,.nutrition{
+    margin: 30px 0;
+}
+.ingredients ul,.instructions ol{
+    margin-left: 20px;
+}
+/* .instructions ol li span{
+} */
+
+.nutrilist{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.weight{
+    width: 50%;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+@media (max-width:700px) {
+    .container{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    img{
+        border-radius: 0;
+    }
+    h1,p,.preparation,.ingredients,.instructions,.nutrition{
+        margin:  20px;
+    }
+}
